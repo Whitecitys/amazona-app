@@ -1,11 +1,15 @@
+import React from 'react';
+import {BrowserRouter, Route} from 'react-router-dom';
+import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './screens/ProductScreen';
 
-import data from './data';
 function App() {
   return (
-    <div className="grid-container">
-         <header class="row">
+      <BrowserRouter>
+        <div className="grid-container">
+         <header className="row">
             <div>
-                <a class="brand" href="/">amazona</a>
+                <a className="brand" href="/">amazona</a>
             </div>
             <div>
                 <a href="/cart">Cart</a>
@@ -13,35 +17,14 @@ function App() {
             </div>
         </header>
         <main>
-            <div className="row center">
-                {data.products.map((product) => (
-                        <div key={product._id} className="card">
-                        <a href={`/product/${product._id}`}>
-                            <img className="medium" src={product.image} alt={product.name}></img>
-                        </a>
-                        <div className="card-body">
-                            <a href="product.html">
-                                <h2>{product.name}</h2>
-                            </a>
-                            <div className="rating">
-                                <span><i className="fa fa-star"></i></span>
-                                <span><i className="fa fa-star"></i></span>
-                                <span><i className="fa fa-star"></i></span>
-                                <span><i className="fa fa-star"></i></span>
-                                <span><i className="far fa-star"></i></span>
-                                <div className="price">${product.price}</div>
-                            </div>
-                        </div>
-                    </div>
-                
-                ))}
-                
-            </div>
+            <Route path ="/product/:id?" component={ProductScreen}></Route>
+            <Route path ="/" component={HomeScreen} exact></Route>
         </main>
         <footer className="row center">
             All right reserved
         </footer>
     </div>
+    </BrowserRouter>
   );
 }
 

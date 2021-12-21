@@ -6,9 +6,10 @@ const data = {
             catagory:'Shirts',
             image:'/images/p1.jpg',
             price:120,
+            countInStock:10,
             brand:'Nike',
             rating:4.5,
-            numReview:10,
+            numReviews:10,
             description:'hign quality product'
         },
         {
@@ -17,9 +18,10 @@ const data = {
             catagory:'Shirts',
             image:'/images/p2.jpg',
             price:120,
+            countInStock:20,
             brand:'Adidas',
             rating:4.0,
-            numReview:10,
+            numReviews:10,
             description:'hign quality product'
         },
         {
@@ -28,9 +30,10 @@ const data = {
             catagory:'Shirts',
             image:'/images/p1.jpg',
             price:220,
+            countInStock:0,
             brand:'Lacoste',
-            rating:4.8,
-            numReview:1,
+            rating:3,
+            numReviews:1,
             description:'hign quality product'
         },
         {
@@ -39,9 +42,10 @@ const data = {
             catagory:'Shirts',
             image:'/images/p1.jpg',
             price:78,
+            countInStock:15,
             brand:'Nike',
             rating:4.5,
-            numReview:14,
+            numReviews:14,
             description:'hign quality product'
         },
         {
@@ -50,9 +54,10 @@ const data = {
             catagory:'Pants',
             image:'/images/p1.jpg',
             price:65,
+            countInStock:5,
             brand:'Puma',
-            rating:4.5,
-            numReview:10,
+            rating:2,
+            numReviews:10,
             description:'hign quality product'
         },
         {
@@ -61,9 +66,10 @@ const data = {
             catagory:'Pants',
             image:'/images/p1.jpg',
             price:139,
+            countInStock:12,
             brand:'Adidas',
-            rating:4.5,
-            numReview:15,
+            rating:1.5,
+            numReviews:15,
             description:'hign quality product'
         },
         
